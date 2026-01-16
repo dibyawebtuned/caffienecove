@@ -34,3 +34,68 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
+
+
+
+
+caffeinecove/
+├── src/
+│   ├── app/
+│   │   ├── (routes)/                # Route groups (not in URL)
+│   │   │   ├── page.tsx             # Home page
+│   │   │   ├── about/
+│   │   │   │   └── page.tsx         # /about
+│   │   │   ├── menu/
+│   │   │   │   └── page.tsx         # /menu
+│   │   │   ├── contact/
+│   │   │   │   └── page.tsx         # /contact
+│   │   │   └── blog/
+│   │   │       ├── page.tsx         # /blog
+│   │   │       └── [slug]/
+│   │   │           └── page.tsx     # /blog/coffee-benefits
+│   │   │
+│   │   ├── layout.tsx               # Root layout
+│   │   ├── not-found.tsx            # Custom 404
+│   │   ├── loading.tsx              # Global loading UI
+│   │   └── sitemap.ts               # SEO sitemap
+│   │
+│   ├── components/
+│   │   ├── ui/                      # Buttons, inputs, modals
+│   │   ├── layout/                  # Header, Footer, Navbar
+│   │   ├── sections/                # Hero, MenuSection, CTA
+│   │   └── seo/                     # SEO helpers (Meta, JSON-LD)
+│   │
+│   ├── lib/
+│   │   ├── seo.ts                   # Metadata helpers
+│   │   ├── constants.ts             # App constants
+│   │   └── utils.ts                 # Reusable utilities
+│   │
+│   ├── content/                     # SEO content
+│   │   └── blog/
+│   │       ├── coffee-benefits.md
+│   │       └── brewing-guide.md
+│   │
+│   ├── styles/
+│   │   └── globals.css
+│   │
+│   └── hooks/
+│       └── useScroll.ts
+│
+├── public/
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── menu/
+│   │   └── blog/
+│   ├── icons/
+│   ├── favicon.ico
+│   └── robots.txt
+│
+├── next.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+└── package.json
