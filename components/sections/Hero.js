@@ -31,8 +31,7 @@ const Hero = () => {
                         <p className="font-lato text-[#E1E1E1] 
                         text-base sm:text-lg md:text-[20px] lg:text-[21px] 
                         mb-6">
-                            Caffeine Cove – a cozy café in Australia serving artisanal coffee,
-                            fresh pastries, and a welcoming atmosphere.
+                            Caffeine Cove is your neighbourhood escape for exceptional coffee, beautifully crafted meals, and indulgent desserts — served in a warm, relaxed space where every visit feels special.
                         </p>
 
                         {/* Buttons */}

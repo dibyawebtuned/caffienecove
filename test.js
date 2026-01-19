@@ -1,100 +1,109 @@
 "use client";
+import React from "react";
+import Image from "next/image";
+import { Coffee, Heart, Smile, Home } from "lucide-react";
 
-import React, { useRef, useState } from "react";
-import Marquee from '@/components/sections/Marquee';
-import { Play, Pause } from "lucide-react"; // Ensure lucide-react is installed
+import Image_1 from "@/public/images/web 9.jpg";
+import Image_2 from "@/public/images/Footer_2.jpg";
+import Image_3 from "@/public/images/web 3.jpg";
 
-const AboutComponent = () => {
-    // Video Player Logic
-    const videoRef = useRef(null);
-    const [isPlaying, setIsPlaying] = useState(false);
+const FEATURES = [
+    {
+        icon: Coffee,
+        title: "Great Coffee,\nTasty Sips",
+    },
+    {
+        icon: Heart,
+        title: "Warm, Cozy\nAtmosphere",
+    },
+    {
+        icon: Smile,
+        title: "Speedy Service\nwith a Smile",
+    },
+    {
+        icon: Home,
+        title: "Local &\nSustainable",
+    },
+];
 
-    const togglePlay = () => {
-        if (videoRef.current) {
-            if (isPlaying) {
-                videoRef.current.pause();
-            } else {
-                videoRef.current.play();
-            }
-            setIsPlaying(!isPlaying);
-        }
-    };
-
+const AboutThirdSection = () => {
     return (
-        <section className='bg-[#FFF7FB]'>
-            {/* Hero Section */}
-            <div className="relative h-[40vh] sm:h-[45vh] lg:h-[50vh] flex items-center justify-center overflow-hidden">
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/Footer_3.jpg')" }}
-                />
-                <div className="absolute inset-0 bg-[#3B1E3F]/80" />
+        <section className="max-w-[1440px] mx-auto px-4 md:px-8 xl:px-[100px] py-16">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+                {/* LEFT CONTENT */}
+                <div className="flex-1">
+                    <div className="mb-10">
+                        <h2 className="font-playfair font-semibold text-3xl sm:text-4xl lg:text-[40px] text-solid leading-tight mb-4">
+                            Good Vibes <br /> Great Coffee
+                        </h2>
 
-                <h2 className="mt-[70px] relative z-10 font-playfair font-semibold
-                text-3xl sm:text-4xl lg:text-[47px]
-                text-white text-center leading-tight px-4">
-                    About Us
-                </h2>
-            </div>
+                        <p className="text-gray-600 max-w-md leading-relaxed">
+                            At Brewhaus, we serve great coffee and fresh pastries with
+                            care and passion, creating a warm, cozy space that feels
+                            like home.
+                        </p>
+                    </div>
 
-            {/* Marquee */}
-            <Marquee />
+                    {/* FEATURES GRID */}
+                    <div className="relative grid grid-cols-1 sm:grid-cols-2 mt-12 bg-[#FBF3DC] rounded-xl overflow-hidden">
+                        {/* Dividers */}
+                        <div className="hidden sm:block absolute inset-y-0 left-1/2 w-px bg-[#D8D1B8]" />
+                        <div className="hidden sm:block absolute inset-x-0 top-1/2 h-px bg-[#D8D1B8]" />
 
-            <div className='max-w-[1440px] mx-auto px-4 md:px-8 xl:px-[100px] py-[25px] sm:py-[50px]'>
-                <div className='flex items-center justify-center'>
-                    <div className='flex flex-col gap-[70px] items-center justify-center w-full'>
-
-                        <div className="md:w-[70%] flex flex-col gap-[15px]">
-                            <h2 className="font-playfair font-semibold text-3xl sm:text-4xl lg:text-[47px] text-[#5E315E] text-center leading-tight">
-                                A Cafe That Feels Like <br /> Home
-                            </h2>
-
-                            <p className="m-0 text-center text-[#5E315E]/80 
-                            text-sm sm:text-base
-                            font-lato font-semibold leading-[140%]">
-                                At Caffeine Cove, we believe in more than just coffee.
-                                We craft each cup with care, pair it with fresh, locally
-                                sourced ingredients, and serve it in a warm, inviting space.
-                                Whether you’re stopping by for a morning espresso, brunch with
-                                friends, or an afternoon treat, Caffeine Cove is your perfect getaway.
-                            </p>
-
-                            {/* --- Video Component --- */}
-                            <div className="relative w-full mt-6 group rounded-[20px] overflow-hidden shadow-xl bg-black aspect-video">
-                                <video
-                                    ref={videoRef}
-                                    onClick={togglePlay}
-                                    className="w-full h-full object-cover cursor-pointer"
-                                    // FIXED: Use string path, do not import
-                                    src="/images/Hero_Video.mp4"
-                                    playsInline
-                                // Optional: Add a poster image so it's not black before loading
-                                // poster="/images/web 4.jpg" 
-                                />
-
-                                {/* Custom Play/Pause Overlay */}
+                        {FEATURES.map((item, index) => {
+                            const Icon = item.icon;
+                            return (
                                 <div
-                                    className={`absolute inset-0 flex items-center justify-center bg-black/20 transition-all duration-300 pointer-events-none
-                                    ${isPlaying ? "opacity-0 group-hover:opacity-100" : "opacity-100"}`}
+                                    key={index}
+                                    className="flex flex-col items-center justify-center text-center px-6 py-10"
                                 >
-                                    <button
-                                        className="w-16 h-16 sm:w-20 sm:h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg"
-                                    >
-                                        {isPlaying ? (
-                                            <Pause className="w-6 h-6 sm:w-8 sm:h-8 text-[#5E315E] fill-current" />
-                                        ) : (
-                                            <Play className="w-6 h-6 sm:w-8 sm:h-8 text-[#5E315E] fill-current ml-1" />
-                                        )}
-                                    </button>
+                                    <div className="w-14 h-14 rounded-full bg-[#1E4D2B] flex items-center justify-center mb-5">
+                                        <Icon
+                                            className="w-7 h-7 text-[#FBF3DC]"
+                                            strokeWidth={1.8}
+                                        />
+                                    </div>
+
+                                    <h3 className="text-[#1E4D2B] font-playfair text-lg sm:text-xl leading-snug whitespace-pre-line">
+                                        {item.title}
+                                    </h3>
                                 </div>
-                            </div>
-                            {/* ----------------------- */}
+                            );
+                        })}
+                    </div>
+                </div>
+
+                {/* RIGHT IMAGES */}
+                <div className="flex-1 flex flex-col sm:flex-row gap-5">
+                    {/* Large image */}
+                    <div className="flex-1 relative h-[260px] sm:h-[320px] lg:h-[380px] rounded-lg overflow-hidden">
+                        <Image
+                            src={Image_1}
+                            alt="Coffee shop"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+
+                    {/* Two stacked images */}
+                    <div className="flex-1 flex flex-col gap-5">
+                        <div className="relative h-[180px] sm:h-[150px] lg:h-[180px] rounded-lg overflow-hidden">
+                            <Image
+                                src={Image_2}
+                                alt="Pastries"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
 
-                        <div>
-                            <h2 className="font-playfair font-semibold text-center text-[32px] sm:text-[40px] text-[#5E315E] leading-tight">
-                                The Heart of <br /> Caffeine
-                            </h2>
+                        <div className="relative h-[180px] sm:h-[150px] lg:h-[180px] rounded-lg overflow-hidden">
+                            <Image
+                                src={Image_3}
+                                alt="Coffee brewing"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </div>
@@ -103,4 +112,4 @@ const AboutComponent = () => {
     );
 };
 
-export default AboutComponent;
+export default AboutThirdSection;

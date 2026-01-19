@@ -27,7 +27,7 @@ const Footer = () => {
           <ul className='flex flex-col gap-[10px]'>
             <li className='flex items-center gap-2'>
               <PhoneCall size={16} />
-              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>0422 514 520</Link>
+              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>0243989090</Link>
             </li>
             <li className='flex items-center gap-2'>
               <Mail size={16} />
@@ -35,7 +35,7 @@ const Footer = () => {
             </li>
             <li className='flex items-center gap-2'>
               <Clock7 size={16} />
-              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>7:30 AM-5:00 PM</Link>
+              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>7:30am - 5pm (Everyday)</Link>
             </li>
             <li className='flex items-center gap-2'>
               <MapPin size={16} />

@@ -50,7 +50,7 @@ const ContactComponent = () => {
                                     Our team is ready to answer your questions and assist you with any inquiries. Reach out now.
                                 </p>
                                 <div className='flex'>
-                                    <Link href="tel:0466911940" className="text-[#5e315e] flex text-start sm:text-center poppins font-semibold">0466 911 940</Link>
+                                    <Link href="tel:0243989090" className="text-[#5e315e] flex text-start sm:text-center poppins font-semibold">0243989090</Link>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const ContactComponent = () => {
                                     Need more information? Reach out to us via email, and our team will get back to you as soon as possible.
                                 </p>
                                 <div className='flex'>
-                                    <Link href="mailto:auzsheetroofing@outlook.com" className="text-[#5e315e] flex text-start sm:text-center poppins font-semibold">auzsheetroofing@outlook.com</Link>
+                                    <Link href="mailto:info.caffeinecove@gmail.com" className="text-[#5e315e] flex text-start sm:text-center poppins font-semibold">info.caffeinecove@gmail.com</Link>
                                 </div>
                             </div>
                         </div>
