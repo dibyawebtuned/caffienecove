@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
             <li className='flex items-center gap-2'>
               <MapPin size={16} />
-              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>Australia</Link>
+              <div className='text-[16px] font-lato font-lato-semibold'>NSW, Australia</div>
             </li>
           </ul>
         </div>
