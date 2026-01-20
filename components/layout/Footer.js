@@ -35,7 +35,7 @@ const Footer = () => {
             </li>
             <li className='flex items-center gap-2'>
               <Clock7 size={16} />
-              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>7:30am - 5pm (Everyday)</Link>
+              <div className='text-[16px] font-lato font-lato-semibold'>7:30am - 5pm (Everyday)</div>
             </li>
             <li className='flex items-center gap-2'>
               <MapPin size={16} />

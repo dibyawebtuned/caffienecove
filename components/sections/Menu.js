@@ -110,7 +110,7 @@ const Menu = () => {
                 /* Hide arrows on very small screens if they block content */
                 @media (max-width: 480px) {
                     .swiper-button-prev, .swiper-button-next {
-                        display: none;
+                        // display: none;
                     }
                 }
             `}</style>

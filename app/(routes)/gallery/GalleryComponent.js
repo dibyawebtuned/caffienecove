@@ -86,7 +86,7 @@ const GalleryComponent = () => {
             </div>
 
             {/* Featured Gallery */}
-            <div className="max-w-[1440px] mx-auto px-4 md:px-8 xl:px-[100px] pt-[25px] sm:pt-[50px] pb-[20px]">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-8 xl:px-[100px] pt-[25px] sm:pt-[50px] pb-[20px] overflow-hidden">
                 <div className="grid gap-6 md:grid-cols-2">
 
                     {/* Large Left */}
