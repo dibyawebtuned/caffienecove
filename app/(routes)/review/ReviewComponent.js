@@ -26,7 +26,7 @@ const ReviewComponent = () => {
                 {/* Content */}
                 <h2 className="mt-[70px] relative z-10 font-playfair font-playfair-semibold 
                 text-3xl sm:text-4xl lg:text-[47px] 
-                text-light text-center leading-tight px-4">
+                text-light text-center leading-tight px-4" data-aos="fade-up">
                     Reviews
                     {/* <br /> Questions */}
                 </h2>
@@ -35,7 +35,7 @@ const ReviewComponent = () => {
             <div className="max-w-[1440px] mx-auto px-4 md:px-8 xl:px-[100px] py-[25px] sm:py-[50px]">
                 <div className='flex flex-col lg:flex-row gap-[20px]'>
                     {/* First */}
-                    <div className='flex-1 flex flex-col gap-[20px]'>
+                    <div className='flex-1 flex flex-col gap-[20px]' data-aos="fade-up" data-aos-delay="100">
                         <div className='bg-[#F5E5F5] border border-[#5E315E] rounded-[20px] px-[15px] sm:px-[20px] py-[26px] sm:py-[47px] flex flex-col gap-[15px] sm:gap-[20px]'>
                             <div>
                                 <Quote fill="currentColor" className='scale-x-[-1] scale-y-[-1] text-[#5E315E]' />
@@ -84,7 +84,7 @@ const ReviewComponent = () => {
                     </div>
 
                     {/* Second */}
-                    <div className='flex-1 flex flex-col gap-[20px]'>
+                    <div className='flex-1 flex flex-col gap-[20px]' data-aos="fade-up" data-aos-delay="300">
                         <div className='h-[300px] sm:h-[406px] rounded-[20px] overflow-hidden relative order-2 lg:order-1'>
                             <Image
                                 src={Image_2}
@@ -129,7 +129,7 @@ const ReviewComponent = () => {
                     </div>
 
                     {/* Third */}
-                    <div className='flex-1 flex flex-col gap-[20px]'>
+                    <div className='flex-1 flex flex-col gap-[20px]' data-aos="fade-up" data-aos-delay="500">
                         <div className='bg-[#F5E5F5] border border-[#5E315E] rounded-[20px] px-[15px] sm:px-[20px] py-[26px] sm:py-[47px] flex flex-col gap-[15px] sm:gap-[20px]'>
                             <div>
                                 <Quote fill="currentColor" className='scale-x-[-1] scale-y-[-1] text-[#5E315E]' />

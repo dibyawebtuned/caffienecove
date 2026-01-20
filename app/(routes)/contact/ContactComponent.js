@@ -26,9 +26,10 @@ const ContactComponent = () => {
                 <div className="absolute inset-0 bg-[#3B1E3F]/80"></div>
 
                 {/* Content */}
-                <h2 className="mt-[70px] relative z-10 font-playfair font-playfair-semibold 
-                text-3xl sm:text-4xl lg:text-[47px] 
-                text-light text-center leading-tight px-4">
+                <h2
+                    className="mt-[70px] relative z-10 font-playfair font-playfair-semibold 
+                    text-3xl sm:text-4xl lg:text-[47px] 
+                    text-light text-center leading-tight px-4" data-aos="fade-up">
                     Contact Us
                     {/* <br /> Questions */}
                 </h2>
@@ -45,12 +46,12 @@ const ContactComponent = () => {
                             </div>
 
                             <div className='flex flex-col sm:items-center '>
-                                <h3 className="text-[#5e315e] text-xl poppins font-semibold mb-1 text-start sm:text-center host-grotesk host-grotesk-semibold">CALL US</h3>
-                                <p className="inter text-[#5e315e]/80 mb-1 text-sm leading-5 text-start sm:text-center">
+                                <h3 className="text-[#5e315e] text-xl poppins font-semibold mb-1 text-start sm:text-center font-playfair font-playfair-semibold">CALL US</h3>
+                                <p className="font-lato font-lato-regular text-[#5e315e]/80 mb-1 text-sm leading-5 text-start sm:text-center">
                                     Our team is ready to answer your questions and assist you with any inquiries. Reach out now.
                                 </p>
                                 <div className='flex'>
-                                    <Link href="tel:0243989090" className="text-[#5e315e] flex text-start sm:text-center poppins font-semibold">0243989090</Link>
+                                    <Link href="tel:0243989090" className="text-[#5e315e] flex text-start sm:text-center font-lato font-lato-bold">0243989090</Link>
                                 </div>
                             </div>
                         </div>
@@ -62,12 +63,12 @@ const ContactComponent = () => {
                             </div>
 
                             <div className='flex flex-col sm:items-center'>
-                                <h3 className="text-[#5e315e] text-xl poppins font-semibold mb-1 text-start sm:text-center host-grotesk host-grotesk-semibold">CONTACT US</h3>
-                                <p className="inter text-[#5e315e]/80 mb-1 text-sm leading-5 text-start sm:text-center">
+                                <h3 className="text-[#5e315e] text-xl poppins font-semibold mb-1 text-start sm:text-center font-playfair font-playfair-semibold">CONTACT US</h3>
+                                <p className="font-lato font-lato-regular text-[#5e315e]/80 mb-1 text-sm leading-5 text-start sm:text-center">
                                     Need more information? Reach out to us via email, and our team will get back to you as soon as possible.
                                 </p>
                                 <div className='flex'>
-                                    <Link href="mailto:info.caffeinecove@gmail.com" className="text-[#5e315e] flex text-start sm:text-center poppins font-semibold">info.caffeinecove@gmail.com</Link>
+                                    <Link href="mailto:info.caffeinecove@gmail.com" className="text-[#5e315e] flex text-start sm:text-center font-lato font-lato-bold">info.caffeinecove@gmail.com</Link>
                                 </div>
                             </div>
                         </div>
@@ -79,11 +80,11 @@ const ContactComponent = () => {
                             </div>
 
                             <div className='flex flex-col sm:items-center'>
-                                <h3 className="text-[#5e315e] text-xl poppins font-semibold mb-1 text-start sm:text-center host-grotesk host-grotesk-semibold">
+                                <h3 className="text-[#5e315e] text-xl poppins font-semibold mb-1 text-start sm:text-center font-playfair font-playfair-semibold">
                                     FOLLOW US
                                 </h3>
 
-                                <p className="inter text-[#5e315e]/80 mb-1 text-sm leading-5 text-start sm:text-center">
+                                <p className="font-lato font-lato-regular text-[#5e315e]/80 mb-1 text-sm leading-5 text-start sm:text-center">
                                     Stay updated with our latest projects, roofing tips, and completed work by following us on social media.
                                 </p>
 
@@ -91,7 +92,7 @@ const ContactComponent = () => {
                                     <ul className='flex gap-4 text-start sm:text-center mt-2'>
                                         <li className="border border-[#5e315e] p-2.5 rounded-full transition-all duration-300 hover:bg-[#5e315e] hover:scale-110 group">
                                             <Link
-                                                href=""
+                                                href="https://www.facebook.com/share/1EgdGQEyB6/?mibextid=wwXIfr"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="flex items-center justify-center text-[#5e315e]"
@@ -101,7 +102,7 @@ const ContactComponent = () => {
                                         </li>
 
                                         <li className="border border-[#5e315e] p-2.5 rounded-full transition-all duration-300 hover:bg-[#5e315e] hover:scale-110 group">
-                                            <Link href=""
+                                            <Link href="https://www.instagram.com/caffeine_cove.au?igsh=ZmRxbndtNXQxdGV6&utm_source=qr"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="flex items-center justify-center text-[#5e315e]"
@@ -119,9 +120,13 @@ const ContactComponent = () => {
                     <ContactSection />
 
                     {/* Map */}
-                    <div className="w-full h-96 rounded-4xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        className="w-full h-96 rounded-4xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214210.73214288888!2d151.37785482194008!3d-32.976275502015426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b733e1371c702e5%3A0x4017d681632a8a0!2sNewcastle%20NSW%2C%20Australia!5e0!3m2!1sen!2snp!4v1766989877599!5m2!1sen!2snp"
+                            src="https://www.google.com/maps?q=Shop+9+495+Pacific+Highway+Wyoming+NSW+2250+Australia&output=embed"
                             width="100%"
                             height="100%"
                             className="border-0"
@@ -130,6 +135,7 @@ const ContactComponent = () => {
                             referrerPolicy="no-referrer-when-downgrade"
                         />
                     </div>
+
 
                 </div>
             </div>

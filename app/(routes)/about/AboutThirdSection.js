@@ -19,24 +19,24 @@ const AboutThirdSection = () => {
             className="
         flex flex-col lg:flex-row
         gap-[20px]
-        px-4 sm:px-6 lg:px-0
+        px-1 sm:px-6 lg:px-0
       "
         >
             {/* LEFT CONTENT */}
             <div className='flex-1'>
-                <div className='mb-12 flex flex-col gap-[15px] text-center lg:text-left'>
-                    <h2 className="font-playfair font-playfair-semibold text-3xl sm:text-4xl lg:text-[47px] text-solid leading-tight">
+                <div className='mb-6 md:mb-12 flex flex-col gap-[15px] text-center lg:text-left'>
+                    <h2 className="font-playfair font-playfair-semibold text-3xl sm:text-4xl lg:text-[47px] text-solid leading-tight text-center">
                         Good Vibes <br /> Great Coffee
                     </h2>
 
-                    <p className="m-0 p-text text-sm sm:text-base font-lato font-lato-semibold leading-[140%]">
+                    <p className="m-0 p-text text-sm sm:text-base font-lato font-lato-semibold leading-[140%] text-center">
                         At Brewhaus, we serve great coffee and fresh pastries with
                         care and passion, creating a warm, cozy space that feels like home.
                     </p>
                 </div>
 
                 {/* FEATURES GRID */}
-                <div className="relative grid grid-cols-1 sm:grid-cols-2 mt-8 sm:mt-12 mx-0 sm:mx-4 rounded-xl overflow-hidden">
+                <div className="relative grid grid-cols-1 sm:grid-cols-2 mt-0 sm:mt-12 mx-0 sm:mx-4 rounded-xl overflow-hidden">
                     {/* Dividers */}
                     <div className="hidden sm:block absolute inset-y-0 left-1/2 w-px bg-[#5E315E]" />
                     <div className="hidden sm:block absolute inset-x-0 top-1/2 h-px bg-[#5E315E]" />
@@ -44,7 +44,7 @@ const AboutThirdSection = () => {
                     {FEATURES.map((item, index) => {
                         const Icon = item.icon;
                         return (
-                            <div key={index} className="flex flex-col items-center justify-center text-center px-4 sm:px-6 py-8 sm:py-10">
+                            <div key={index} className="flex flex-col items-center justify-center text-center px-4 sm:px-6 py-5 sm:py-10">
                                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#5E315E] flex items-center justify-center mb-4 sm:mb-5">
                                     <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-light" strokeWidth={1.8} />
                                 </div>
@@ -62,7 +62,7 @@ const AboutThirdSection = () => {
             <div className="
         flex-1 flex flex-col sm:flex-row
         gap-5
-        mt-10 lg:mt-0   /* spacing when stacked */
+        mt-0 lg:mt-0   /* spacing when stacked */
       ">
                 {/* Large image */}
                 <div className="

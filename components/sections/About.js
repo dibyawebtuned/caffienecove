@@ -47,10 +47,10 @@ const About = () => {
                     </div>
 
                     <div>
-                        <Link href="">
+                        <Link href="about">
                             <button className="bg-[#FBC029] text-[#5E315E] 
                             text-sm sm:text-base
-                            font-lato font-lato-semibold px-[20px] py-[10px] rounded-full transition">
+                            font-lato font-lato-semibold px-[20px] py-[10px] rounded-full transition cursor-pointer">
                                 Know More
                             </button>
                         </Link>

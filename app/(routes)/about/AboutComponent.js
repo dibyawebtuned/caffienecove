@@ -40,8 +40,8 @@ const AboutComponent = () => {
                     <div className="absolute inset-0 bg-[#3B1E3F]/80" />
 
                     <h2 className="mt-[70px] relative z-10 font-playfair font-playfair-semibold
-                text-3xl sm:text-4xl lg:text-[47px]
-                text-white text-center leading-tight px-4">
+                    text-3xl sm:text-4xl lg:text-[47px]
+                    text-white text-center leading-tight px-4" data-aos="fade-up">
                         About Us
                     </h2>
                 </div>
@@ -126,18 +126,24 @@ const AboutComponent = () => {
 
 
                             </div>
-
-                            {/* Second Section */}
-                            <div className='w-full'>
-                                <AboutSecondSection />
-                            </div>
-
-                            {/* Third Section */}
-                            <div className='w-full'>
-                                <AboutThirdSection />
-                            </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Marquee */}
+                <Marquee />
+
+                {/* Second Section */}
+                <div className='w-full max-w-360 mx-auto px-3 md:px-5 lg:px-5 xl:px-25 py-[25px] sm:py-[50px]'>
+                    <AboutSecondSection />
+                </div>
+
+                {/* Marquee */}
+                <Marquee />
+
+                {/* Third Section */}
+                <div className='w-full max-w-360 mx-auto px-3 md:px-5 lg:px-5 xl:px-25 py-[25px] sm:py-[50px]'>
+                    <AboutThirdSection />
                 </div>
             </section>
         </div>

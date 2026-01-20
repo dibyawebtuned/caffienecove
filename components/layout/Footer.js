@@ -27,11 +27,11 @@ const Footer = () => {
           <ul className='flex flex-col gap-[10px]'>
             <li className='flex items-center gap-2'>
               <PhoneCall size={16} />
-              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>0243989090</Link>
+              <Link href="tel:0243989090" className='text-[16px] font-lato font-lato-semibold'>0243989090</Link>
             </li>
             <li className='flex items-center gap-2'>
               <Mail size={16} />
-              <Link href="tel:0422514520" className='text-[16px] font-lato font-lato-semibold'>info.caffeinecove@gmail.com</Link>
+              <Link href="mailto:info.caffeinecove@gmail.com" className='text-[16px] font-lato font-lato-semibold'>info.caffeinecove@gmail.com</Link>
             </li>
             <li className='flex items-center gap-2'>
               <Clock7 size={16} />
@@ -51,16 +51,16 @@ const Footer = () => {
           </div>
           <ul className='flex flex-col gap-[11px]'>
             <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>About us</Link>
+              <Link href="about" className='font-playfair font-playfair-semibold'>About us</Link>
             </li>
             <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>Menu</Link>
+              <Link href="menu" className='font-playfair font-playfair-semibold'>Menu</Link>
             </li>
             <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>Reviews</Link>
+              <Link href="review" className='font-playfair font-playfair-semibold'>Reviews</Link>
             </li>
             <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>Contact</Link>
+              <Link href="contact" className='font-playfair font-playfair-semibold'>Contact</Link>
             </li>
           </ul>
         </div>
@@ -71,17 +71,17 @@ const Footer = () => {
             <span className='font-lato font-lato-semibold text-[21px]'>Categories</span>
           </div>
           <ul className='flex flex-col gap-[11px]'>
-            <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>House Brew</Link>
+            <li className='font-playfair font-playfair-semibold'>
+              House Brew
             </li>
-            <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>Drinks</Link>
+            <li className='font-playfair font-playfair-semibold'>
+              Drinks
             </li>
-            <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>Breakfast</Link>
+            <li className='font-playfair font-playfair-semibold'>
+              Breakfast
             </li>
-            <li>
-              <Link href="" className='font-playfair font-playfair-semibold'>Desserts</Link>
+            <li className='font-playfair font-playfair-semibold'>
+              Desserts
             </li>
           </ul>
         </div>
@@ -95,20 +95,20 @@ const Footer = () => {
           <ul className='flex flex-row gap-[15px]'>
             <li className="border border-[#FFF6FF] p-2.5 rounded-full transition-all duration-300 hover:bg-[#FFF6FF] hover:scale-110 group">
               <Link
-                href=""
+                href="https://www.facebook.com/share/1EgdGQEyB6/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-[#FFF6FF]"
+                className="flex items-center justify-center text-[#FFF6FF] cursor-pointer"
               >
                 <FaFacebookF className="w-5 h-5 transition-colors duration-300 group-hover:text-black" />
               </Link>
             </li>
 
             <li className="border border-[#FFF6FF] p-2.5 rounded-full transition-all duration-300 hover:bg-[#FFF6FF] hover:scale-110 group">
-              <Link href=""
+              <Link href="https://www.instagram.com/caffeine_cove.au?igsh=ZmRxbndtNXQxdGV6&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-[#FFF6FF]"
+                className="flex items-center justify-center text-[#FFF6FF] cursor-pointer"
               >
                 <Instagram className="w-5 h-5 transition-colors duration-300 group-hover:text-black" />
               </Link>

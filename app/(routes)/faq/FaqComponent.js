@@ -21,7 +21,7 @@ const FaqComponent = () => {
                 "Absolutely. All our coffee is freshly brewed using premium, carefully selected beans.",
         },
         {
-        question: "Do you accept card payments?",
+            question: "Do you accept card payments?",
             answer:
                 "Yes, we accept all major cards and contactless payments.",
         },
@@ -41,7 +41,7 @@ const FaqComponent = () => {
                 {/* Content */}
                 <h2 className="mt-[70px] relative z-10 font-playfair font-playfair-semibold 
                 text-3xl sm:text-4xl lg:text-[47px] 
-                text-light text-center leading-tight px-4">
+                text-light text-center leading-tight px-4" data-aos="fade-up">
                     Frequently Asked <br /> Questions
                 </h2>
             </div>
@@ -58,7 +58,10 @@ const FaqComponent = () => {
                 {/* FAQ Card */}
                 <div className="bg-[#5E315E] rounded-2xl px-5 sm:px-8 py-6 sm:py-8">
                     {faqs.map((item, index) => (
-                        <div key={index}>
+                        <div key={index}
+                            data-aos="fade-up"
+                            data-aos-delay={index * 100}
+                            data-aos-anchor-placement="top-bottom">
 
                             {/* FAQ Row */}
                             <div className="flex flex-col lg:flex-row gap-3 lg:gap-8 py-6">

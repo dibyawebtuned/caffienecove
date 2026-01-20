@@ -9,7 +9,17 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Demo images (replace with your own)
+// Demo images
+import Menu_One from "@/public/images/org/menu_straw.png"
+import Menu_Two from "@/public/images/org/Menu_Two.png"
+import Menu_Three from "@/public/images/org/Menu_Three.png"
+import Menu_Four from "@/public/images/org/Menu_Four.png"
+import Menu_Five from "@/public/images/org/Menu_Five.png"
+import Menu_Six from "@/public/images/org/Menu_Six.png"
+import Menu_Seven from "@/public/images/org/Menu_Seven.png"
+import Menu_Eight from "@/public/images/org/Menu_Eight.png"
+import Menu_Nine from "@/public/images/org/Menu_Nine.png"
+import Menu_Ten from "@/public/images/org/Menu_Ten.png"
 import Menu_1 from "@/public/images/Menu_1.png";
 import Menu_2 from "@/public/images/Menu_2.png";
 import Menu_3 from "@/public/images/Menu_3.png";
@@ -17,33 +27,63 @@ import Menu_4 from "@/public/images/Menu_4.png";
 
 const menuItems = [
     {
-        image: Menu_1,
-        title: "Espresso",
-        price: "$4.50",
+        image: Menu_Nine,
+        title: "Morning Smash",
+        // price: "$4.50",
         description: "Rich and bold coffee shot with an intense aroma and smooth crema.",
     },
     {
-        image: Menu_2,
-        title: "Cappuccino",
-        price: "$4.00",
+        image: Menu_Eight,
+        title: "Spaghetti Gamberi",
+        // price: "$4.00",
         description: "Creamy espresso with steamed milk and a frothy layer of foam.",
     },
     {
-        image: Menu_3,
-        title: "Latte",
-        price: "$4.25",
+        image: Menu_Seven,
+        title: "Smoked Salmon Bagel",
+        // price: "$4.25",
         description: "Smooth blend of espresso and steamed milk with light foam.",
     },
     {
-        image: Menu_4,
-        title: "Mocha",
-        price: "$4.75",
+        image: Menu_Six,
+        title: "Healthy Salmon Bowl",
+        // price: "$4.75",
         description: "Chocolatey twist to your coffee with a rich espresso base.",
     },
     {
-        image: Menu_4,
-        title: "Mocha",
-        price: "$4.75",
+        image: Menu_Five,
+        title: "Coconut Yoghurt Bowl",
+        // price: "$4.75",
+        description: "Chocolatey twist to your coffee with a rich espresso base.",
+    },
+    {
+        image: Menu_Four,
+        title: "Cove Benedict",
+        // price: "$4.75",
+        description: "Chocolatey twist to your coffee with a rich espresso base.",
+    },
+    {
+        image: Menu_Three,
+        title: "Cheesy Chilli Prawn Omelette",
+        // price: "$4.75",
+        description: "Chocolatey twist to your coffee with a rich espresso base.",
+    },
+    {
+        image: Menu_Ten,
+        title: "Strawberry Milkshake",
+        // price: "$4.75",
+        description: "Chocolatey twist to your coffee with a rich espresso base.",
+    },
+    {
+        image: Menu_One,
+        title: "Mango Matcha",
+        // price: "$4.75",
+        description: "Chocolatey twist to your coffee with a rich espresso base.",
+    },
+    {
+        image: Menu_Two,
+        title: "Bacon & Egg Roll",
+        // price: "$4.75",
         description: "Chocolatey twist to your coffee with a rich espresso base.",
     },
 ];
@@ -77,9 +117,9 @@ const Menu = () => {
 
             <div className="max-w-[1440px] mx-auto px-4 md:px-8 xl:px-[100px]">
                 {/* Heading: Responsive text sizing */}
-                <h1 className="text-center font-playfair font-semibold text-3xl sm:text-4xl lg:text-[47px] text-[#fff6ff] leading-[120%] mb-8 md:mb-12">
+                <h2 className="font-playfair font-playfair-semibold text-3xl sm:text-4xl lg:text-[47px] text-solid text-center !text-white mb-6 md:mb-12">
                     Our All-Day Menu of Food, Coffee <br className="hidden md:block" /> & Cafe Favourites
-                </h1>
+                </h2>
 
                 {/* Menu Slider */}
                 <Swiper
@@ -138,7 +178,7 @@ const Menu = () => {
                                 </div>
 
                                 {/* Title & Price */}
-                                <div className="flex justify-between w-full items-center mb-2 px-1 z-10">
+                                <div className="flex justify-center w-full items-center mb-2 px-1 z-10">
                                     <h3 className="font-playfair font-semibold text-base md:text-lg text-[#5E315E]">
                                         {item.title}
                                     </h3>

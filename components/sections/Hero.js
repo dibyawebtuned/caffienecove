@@ -22,34 +22,39 @@ const Hero = () => {
                 <div className="w-full max-w-[1200px] flex flex-col items-center text-center">
 
                     {/* Text Wrapper */}
-                    <div className="w-full sm:w-[90%] md:w-[70%] lg:w-[60%]">
+                    <div className="w-full sm:w-[90%] md:w-[70%] lg:w-[60%] mt-20">
                         <h1 className="font-playfair leading-[115%] text-light font-bold 
-                        text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] mb-4">
+                            text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] mb-4"
+                            data-aos="fade-up">
                             Your Daily Escape, One Sip at a Time
                         </h1>
 
-                        <p className="font-lato text-[#E1E1E1] 
-                        text-base sm:text-lg md:text-[20px] lg:text-[21px] 
-                        mb-6">
+                        <p
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            className="font-lato text-[#E1E1E1]
+                            text-base sm:text-lg md:text-[20px] lg:text-[21px]
+                            mb-6"
+                        >
                             Caffeine Cove is your neighbourhood escape for exceptional coffee, beautifully crafted meals, and indulgent desserts — served in a warm, relaxed space where every visit feels special.
                         </p>
 
                         {/* Buttons */}
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5">
-                            <Link href="">
-                                <button className="bg-[#FBC029] text-[#5E315E] 
-                                text-[15px] sm:text-[16px] font-lato font-lato-semibold 
-                                px-6 py-3 rounded-full transition hover:scale-105 w-full sm:w-auto">
+                        <div className="flex flex-row items-center justify-center gap-3 sm:gap-5">
+                            <Link href="menu">
+                                <button className="bg-[#FBC029] text-[#5E315E]
+                                    text-[15px] text-sm sm:text-base font-lato font-lato-semibold
+                                    px-6 py-3 rounded-full transition w-full sm:w-auto cursor-pointer">
                                     View Menu
                                 </button>
                             </Link>
 
-                            <Link href="">
-                                <button className="border-[1.5px] border-[#FBC029] text-[#FBC029] 
-                                text-[15px] sm:text-[16px] font-lato font-lato-semibold 
-                                px-6 py-3 rounded-full hover:bg-[#FBC029]/10 
-                                w-full sm:w-auto">
-                                    Reservation
+                            <Link href="about">
+                                <button className="border-[1.5px] border-[#FBC029] text-[#FBC029]
+                                    text-sm sm:text-base font-lato font-lato-semibold
+                                    px-6 py-3 rounded-full hover:bg-[#FBC029]/10
+                                    w-full sm:w-auto cursor-pointer">
+                                    Know More
                                 </button>
                             </Link>
                         </div>

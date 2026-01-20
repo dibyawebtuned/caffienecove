@@ -79,8 +79,8 @@ const GalleryComponent = () => {
                 <div className="absolute inset-0 bg-[#3B1E3F]/80" />
 
                 <h2 className="mt-[70px] relative z-10 font-playfair font-semibold 
-          text-3xl sm:text-4xl lg:text-[47px] 
-          text-white text-center px-4">
+                text-3xl sm:text-4xl lg:text-[47px] 
+                text-white text-center px-4" data-aos="fade-up">
                     Gallery
                 </h2>
             </div>
@@ -93,6 +93,7 @@ const GalleryComponent = () => {
                     <div
                         className="relative aspect-[5/4] rounded-xl overflow-hidden cursor-pointer group"
                         onClick={() => setIndex(largeLeftIndex)}
+                        data-aos="fade-right"
                     >
                         <Image
                             src={IMAGES[largeLeftIndex]}
@@ -110,6 +111,8 @@ const GalleryComponent = () => {
                                 key={i}
                                 className="relative aspect-[5/4] rounded-xl overflow-hidden cursor-pointer group"
                                 onClick={() => setIndex(topRightStart + i)}
+                                data-aos="fade-up"
+                                data-aos-delay={i * 100}
                             >
                                 <Image
                                     src={src}
@@ -129,6 +132,8 @@ const GalleryComponent = () => {
                                 key={i}
                                 className="relative aspect-[5/4] rounded-xl overflow-hidden cursor-pointer group"
                                 onClick={() => setIndex(bottomLeftStart + i)}
+                                data-aos="fade-up"
+                                data-aos-delay={i * 100}
                             >
                                 <Image
                                     src={src}
@@ -146,6 +151,7 @@ const GalleryComponent = () => {
                         <div
                             className="relative aspect-[5/4] rounded-xl overflow-hidden cursor-pointer group"
                             onClick={() => setIndex(largeRightIndex)}
+                            data-aos="fade-left"
                         >
                             <Image
                                 src={IMAGES[largeRightIndex]}
@@ -171,6 +177,8 @@ const GalleryComponent = () => {
                                     key={actualIndex}
                                     className="relative aspect-[5/4] rounded-xl overflow-hidden cursor-pointer group"
                                     onClick={() => setIndex(actualIndex)}
+                                    data-aos="zoom-in"
+                                    data-aos-delay={(i % 4) * 100}
                                 >
                                     <Image
                                         src={src}

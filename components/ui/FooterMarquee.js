@@ -26,18 +26,18 @@ const FooterMarquee = () => {
                     <div
                         key={index}
                         className="
-              mx-2 sm:mx-3 lg:mx-4
-              flex-shrink-0
-              w-[140px] h-[140px]
-              xs:w-[180px] xs:h-[180px]
-              sm:w-[220px] sm:h-[220px]
-              md:w-[250px] md:h-[250px]
-              lg:w-[300px] lg:h-[300px]
-              xl:w-[340px] xl:h-[340px]
-              rounded-lg sm:rounded-xl
-              overflow-hidden
-              relative
-            "
+                        mx-2 sm:mx-3 lg:mx-4
+                        flex-shrink-0
+                        w-[140px] h-[140px]
+                        xs:w-[180px] xs:h-[180px]
+                        sm:w-[220px] sm:h-[220px]
+                        md:w-[250px] md:h-[250px]
+                        lg:w-[300px] lg:h-[300px]
+                        xl:w-[340px] xl:h-[340px]
+                        rounded-lg sm:rounded-xl
+                        overflow-hidden
+                        relative
+                        "
                     >
                         <Image
                             src={img.src}
