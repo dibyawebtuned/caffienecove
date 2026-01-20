@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import Link from "next/link";
 
 // Import Swiper styles
 import "swiper/css";
@@ -127,7 +128,7 @@ const Menu = () => {
                     navigation
                     spaceBetween={20}
                     slidesPerView={1}
-                    className="!pb-10"
+                    // className="!pb-10"
                     breakpoints={{
                         // Mobile: 1 slide
                         0: {
