@@ -24,7 +24,7 @@ const Hero = () => {
                     {/* Text Wrapper */}
                     <div className="w-full sm:w-[90%] md:w-[70%] lg:w-[60%] mt-20">
                         <h1 className="font-playfair leading-[115%] text-light font-bold 
-                            text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] mb-4"
+                            text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] mb-4"
                             data-aos="fade-up">
                             Your Daily Escape, One Sip at a Time
                         </h1>
@@ -33,7 +33,7 @@ const Hero = () => {
                             data-aos="fade-up"
                             data-aos-delay="200"
                             className="font-lato text-[#E1E1E1]
-                            text-base sm:text-lg md:text-[20px] lg:text-[21px]
+                            text-[14px] sm:text-[16px] md:text-[16px] lg:text-[16px]
                             mb-6"
                         >
                             Caffeine Cove is your neighbourhood escape for exceptional coffee, beautifully crafted meals, and indulgent desserts — served in a warm, relaxed space where every visit feels special.
