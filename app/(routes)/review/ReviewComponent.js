@@ -19,7 +19,7 @@ const ReviewComponent = () => {
             <div className="relative h-[40vh] sm:h-[45vh] lg:h-[50vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <div
-                    className="absolute inset-0 bg-cover bg-center"w
+                    className="absolute inset-0 bg-cover bg-center" w
                     style={{ backgroundImage: "url('/images/Footer_3.jpg')" }}
                 />
 
@@ -106,7 +106,7 @@ const ReviewComponent = () => {
                             </div>
                         </div>
 
-                        <div className='h-[300px] sm:h-[406px] rounded-[20px] overflow-hidden relative order-2 lg:order-3'>
+                        <div className='h-[300px] sm:h-[406px] rounded-[20px] overflow-hidden relative order-4 lg:order-3'>
                             <Image
                                 src={Image_2}
                                 fill
@@ -114,7 +114,7 @@ const ReviewComponent = () => {
                                 className='object-cover' />
                         </div>
 
-                        <div className='bg-[#F5E5F5] border border-[#5E315E] rounded-[20px] px-[15px] sm:px-[20px] py-[26px] sm:py-[47px] flex flex-col gap-[15px] sm:gap-[20px] order-1 lg:order-4'>
+                        <div className='bg-[#F5E5F5] border border-[#5E315E] rounded-[20px] px-[15px] sm:px-[20px] py-[26px] sm:py-[47px] flex flex-col gap-[15px] sm:gap-[20px] order-3 lg:order-4'>
                             <div>
                                 <Quote fill="currentColor" className='scale-x-[-1] scale-y-[-1] text-[#5E315E]' />
                             </div>
