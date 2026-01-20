@@ -85,7 +85,7 @@ const ContactComponent = () => {
                                 </h3>
 
                                 <p className="font-lato font-lato-regular text-[#5e315e]/80 mb-1 text-sm leading-5 text-start sm:text-center">
-                                    Stay updated with our latest projects, roofing tips, and completed work by following us on social media.
+                                    Stay updated by following us on social media.
                                 </p>
 
                                 <div className="">
