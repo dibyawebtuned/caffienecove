@@ -27,67 +27,58 @@ import Menu_3 from "@/public/images/Menu_3.png";
 import Menu_4 from "@/public/images/Menu_4.png";
 
 const menuItems = [
-    {
-        image: Menu_Nine,
-        title: "Morning Smash",
-        // price: "$4.50",
-        description: "Rich and bold coffee shot with an intense aroma and smooth crema.",
-    },
-    {
-        image: Menu_Eight,
-        title: "Spaghetti Gamberi",
-        // price: "$4.00",
-        description: "Creamy espresso with steamed milk and a frothy layer of foam.",
-    },
-    {
-        image: Menu_Seven,
-        title: "Smoked Salmon Bagel",
-        // price: "$4.25",
-        description: "Smooth blend of espresso and steamed milk with light foam.",
-    },
-    {
-        image: Menu_Six,
-        title: "Healthy Salmon Bowl",
-        // price: "$4.75",
-        description: "Chocolatey twist to your coffee with a rich espresso base.",
-    },
-    {
-        image: Menu_Five,
-        title: "Coconut Yoghurt Bowl",
-        // price: "$4.75",
-        description: "Chocolatey twist to your coffee with a rich espresso base.",
-    },
-    {
-        image: Menu_Four,
-        title: "Cove Benedict",
-        // price: "$4.75",
-        description: "Chocolatey twist to your coffee with a rich espresso base.",
-    },
-    {
-        image: Menu_Three,
-        title: "Cheesy Chilli Prawn Omelette",
-        // price: "$4.75",
-        description: "Chocolatey twist to your coffee with a rich espresso base.",
-    },
-    {
-        image: Menu_Ten,
-        title: "Strawberry Milkshake",
-        // price: "$4.75",
-        description: "Chocolatey twist to your coffee with a rich espresso base.",
-    },
-    {
-        image: Menu_One,
-        title: "Mango Matcha",
-        // price: "$4.75",
-        description: "Chocolatey twist to your coffee with a rich espresso base.",
-    },
-    {
-        image: Menu_Two,
-        title: "Bacon & Egg Roll",
-        // price: "$4.75",
-        description: "Chocolatey twist to your coffee with a rich espresso base.",
-    },
+  {
+    image: Menu_Nine,
+    title: "Morning Smash",
+    description: "Perfectly smashed avocado on toasted sourdough, topped with fresh herbs and a zesty lemon finish.",
+  },
+  {
+    image: Menu_Eight,
+    title: "Spaghetti Gamberi",
+    description: "Al dente spaghetti tossed with juicy prawns in a rich garlic, chilli, and olive oil sauce.",
+  },
+  {
+    image: Menu_Seven,
+    title: "Smoked Salmon Bagel",
+    description: "Soft toasted bagel layered with silky smoked salmon, cream cheese, and fresh dill.",
+  },
+  {
+    image: Menu_Six,
+    title: "Healthy Salmon Bowl",
+    description: "A nourishing bowl of grilled salmon, fresh greens, grains, and a light citrus dressing.",
+  },
+  {
+    image: Menu_Five,
+    title: "Coconut Yoghurt Bowl",
+    description: "Creamy coconut yoghurt topped with seasonal fruits, crunchy granola, and a drizzle of honey.",
+  },
+  {
+    image: Menu_Four,
+    title: "Cove Benedict",
+    description: "Classic eggs benedict with perfectly poached eggs, toasted muffin, and silky hollandaise sauce.",
+  },
+  {
+    image: Menu_Three,
+    title: "Cheesy Chilli Prawn Omelette",
+    description: "Fluffy omelette packed with juicy prawns, melted cheese, and a gentle chilli kick.",
+  },
+  {
+    image: Menu_Ten,
+    title: "Strawberry Milkshake",
+    description: "Thick and creamy milkshake blended with ripe strawberries for a refreshing sweet treat.",
+  },
+  {
+    image: Menu_One,
+    title: "Mango Matcha",
+    description: "Smooth matcha layered with sweet mango for a vibrant, refreshing, and energising drink.",
+  },
+  {
+    image: Menu_Two,
+    title: "Bacon & Egg Roll",
+    description: "Crispy bacon, fluffy eggs, and rich sauce served in a warm, freshly baked roll.",
+  },
 ];
+
 
 const Menu = () => {
     return (
