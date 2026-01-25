@@ -19,7 +19,7 @@ const ReviewComponent = () => {
             <div className="relative h-[40vh] sm:h-[45vh] lg:h-[50vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <div
-                    className="absolute inset-0 bg-cover bg-center" w
+                    className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: "url('/images/Footer_3.jpg')" }}
                 />
 

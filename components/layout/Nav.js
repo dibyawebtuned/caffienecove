@@ -18,6 +18,7 @@ export default function Navbar() {
 
         {/* Left Menu (Desktop) */}
         <div className="hidden lg:flex items-center gap-8">
+          <Link href="/">Home</Link>
           <Link href="menu" className="nav-link">Menu</Link>
           <Link href="about" className="nav-link">About</Link>
           <Link href="gallery" className="nav-link">Gallery</Link>

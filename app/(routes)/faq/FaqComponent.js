@@ -56,7 +56,7 @@ const FaqComponent = () => {
                 </div>
 
                 {/* FAQ Card */}
-                <div className="bg-[#5E315E] rounded-2xl px-5 sm:px-8 py-6 sm:py-8">
+                <div className="bg-[#F5E5F5] border border-[#5E315E] rounded-2xl px-5 sm:px-8 py-6 sm:py-8">
                     {faqs.map((item, index) => (
                         <div key={index}
                             data-aos="fade-up"
@@ -67,7 +67,7 @@ const FaqComponent = () => {
                             <div className="flex flex-col lg:flex-row gap-3 lg:gap-8 py-6">
 
                                 {/* Question */}
-                                <div className="flex items-start gap-2 lg:gap-3 lg:w-2/5 text-[#FFF6FF]">
+                                <div className="flex items-center gap-2 lg:gap-3 lg:w-2/5 text-[#5E315E]">
                                     <CircleQuestionMark className="w-4 h-4 mt-1 shrink-0" />
                                     <p className="font-playfair font-playfair-semibold text-base sm:text-lg leading-snug">
                                         {item.question}
@@ -76,7 +76,7 @@ const FaqComponent = () => {
 
                                 {/* Answer */}
                                 <div className="lg:w-3/5">
-                                    <p className="text-[#FFF6FF] font-lato font-lato-regular text-sm sm:text-base leading-snug">
+                                    <p className="text-[#5E315E] font-lato font-lato-regular text-sm sm:text-base leading-snug">
                                         {item.answer}
                                     </p>
                                 </div>
@@ -84,7 +84,7 @@ const FaqComponent = () => {
 
                             {/* Divider */}
                             {index !== faqs.length - 1 && (
-                                <div className="border-t border-white/30" />
+                                <div className="border-t border-[#5E315E]/30" />
                             )}
                         </div>
                     ))}
