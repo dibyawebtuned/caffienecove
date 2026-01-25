@@ -123,7 +123,7 @@ const Menu = () => {
                 >
                     {menuItems.map((item, index) => (
                         <SwiperSlide key={index} className="h-auto">
-                            <div className="h-full relative bg-[#fff6ff] rounded-2xl overflow-hidden p-8 flex flex-col items-center text-center">
+                            <div className="h-full relative bg-[#fff6ff] border border-[#5E315E] rounded-2xl overflow-hidden p-8 flex flex-col items-center text-center">
 
                                 {/* Decorative Image */}
                                 <div className="absolute -top-5 -right-0 w-[80px] h-[100px] pointer-events-none">
